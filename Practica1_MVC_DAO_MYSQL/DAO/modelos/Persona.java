@@ -10,11 +10,15 @@ public class Persona {
 	public Persona() {
 	}
 
-	public Persona(int id, String nombre, String apellido, int edad) {
-		this.id = id;
+	public Persona(String nombre, String apellido, int edad) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + "]";
 	}
 
 	public int getId() {
